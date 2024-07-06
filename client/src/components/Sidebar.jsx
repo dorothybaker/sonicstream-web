@@ -44,7 +44,7 @@ function Sidebar({ children }) {
           <Library />
         </Box>
       </div>
-      <main className="h-full overflow-y-auto py-2 md:pl-0 pl-2 pr-2 flex-1">
+      <main className="h-full overflow-y-auto sm:py-2 md:pl-0 sm:pl-2 sm:pr-2 flex-1">
         {children}
       </main>
     </div>

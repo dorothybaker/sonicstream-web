@@ -14,7 +14,7 @@ function Search() {
 
   return (
     <div
-      className={`bg-neutral-900 overflow-hidden overflow-y-auto w-full rounded-lg h-full ${
+      className={`bg-neutral-900 overflow-hidden overflow-y-auto w-full sm:rounded-lg h-full ${
         player.activeId && "pb-[80px]"
       }`}
     >

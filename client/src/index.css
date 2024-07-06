@@ -22,11 +22,11 @@ body,
 }
 
 ::-webkit-scrollbar-track {
-  @apply bg-neutral-400/10 rounded-e-lg;
+  @apply bg-neutral-400/10 sm:rounded-e-lg;
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-emerald-800 rounded-e-lg;
+  @apply bg-emerald-800 sm:rounded-e-lg;
 }
 
 .ellipsis {
