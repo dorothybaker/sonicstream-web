@@ -107,7 +107,7 @@ function Header({ children, className }) {
           {user ? (
             <>
               <Button
-                className="bg-transparent text-white px-0 py-0 text-lg font-normal"
+                className="bg-transparent text-white px-0 py-0 text-xl font-normal"
                 onClick={handleLogout}
               >
                 Sign out
@@ -130,7 +130,7 @@ function Header({ children, className }) {
             <>
               <div>
                 <Button
-                  className="bg-transparent text-[#22c55e] px-0 py-0 text-lg font-normal"
+                  className="bg-transparent text-[#22c55e] px-0 py-0 text-xl font-normal"
                   onClick={authModal.onOpen}
                 >
                   Sign in
@@ -138,7 +138,7 @@ function Header({ children, className }) {
               </div>
               <div>
                 <Button
-                  className="bg-transparent text-neutral-300 px-0 py-0 text-lg font-normal"
+                  className="bg-transparent text-neutral-300 px-0 py-0 text-xl font-normal"
                   onClick={authModal.onOpen}
                 >
                   Sign up

@@ -11,7 +11,7 @@ function SidebarItem({ icon: Icon, label, href, active }) {
       )}
     >
       <Icon size={24} />
-      <p className="w-full line-clamp-1">{label}</p>
+      <p className="w-full line-clamp-1 text-lg">{label}</p>
     </Link>
   );
 }

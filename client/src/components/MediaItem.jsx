@@ -22,7 +22,7 @@ function MediaItem({ song, onClick }) {
         </div>
       </div>
       <div className="flex flex-col">
-        <p className="font-normal line-clamp-1">{song?.title}</p>
+        <p className="font-normal line-clamp-1 text-base">{song?.title}</p>
         <p className="font-normal text-sm line-clamp-1 text-neutral-400">
           {song?.author}
         </p>

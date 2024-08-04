@@ -25,7 +25,7 @@ function Search() {
             <input
               type="text"
               placeholder="What song do you want to listen to?"
-              className="h-12 bg-white/15 outline-none font-normal w-full rounded-lg px-3 ellipsis"
+              className="h-12 bg-white/15 outline-none font-normal w-full text-lg rounded-lg px-3 ellipsis"
               value={search}
               onChange={(e) => setSearch(e.target.value)}
             />

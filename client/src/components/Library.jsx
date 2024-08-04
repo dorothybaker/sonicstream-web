@@ -49,7 +49,7 @@ function Library() {
       <div className="flex flex-row items-center justify-between gap-x-4 px-4 pt-4">
         <div className="inline-flex items-center gap-x-3 text-neutral-300">
           <GoTasklist size={22} />
-          <span className="text-neutral-100">Your Library</span>
+          <span className="text-neutral-100 text-lg">Your Library</span>
         </div>
         <button
           className="size-7 rounded-full bg-neutral-400 hover:bg-white transition flex items-center justify-center"

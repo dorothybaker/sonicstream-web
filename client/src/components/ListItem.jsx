@@ -27,7 +27,7 @@ function ListItem({ image, name, href }) {
       <div className="relative h-[64px] w-[64px] bg-gradient-to-b from-[#22c55e] flex items-center justify-center">
         <GoHeartFill size={25} color="white" />
       </div>
-      <p className="text-lg line-clamp-1">{name}</p>
+      <p className="text-xl line-clamp-1">{name}</p>
       <div className="absolute opacity-0 transition flex items-center justify-center bg-[#22c55e] size-10 drop-shadow-md right-4 group-hover:opacity-100 hover:scale-105 rounded-full">
         <IoPlay size={17} color="white" />
       </div>

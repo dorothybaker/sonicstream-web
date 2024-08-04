@@ -116,15 +116,15 @@ function AuthModal() {
         onSubmit={(e) => e.preventDefault()}
       >
         {error && (
-          <span className="text-sm text-red-500 font-normal">{error}</span>
+          <span className="text-[16px] text-red-500 font-normal">{error}</span>
         )}
         {!isLogin && (
           <div className="flex flex-col gap-1">
-            <label className="text-sm text-neutral-400">Full Name</label>
+            <label className="text-[16px] text-neutral-400">Full Name</label>
             <input
               type="text"
               placeholder="Full Name"
-              className="h-12 w-full bg-white/15 px-3 outline-none rounded-lg"
+              className="h-12 w-full bg-white/15 px-3 outline-none rounded-lg text-lg"
               value={formData.fullName}
               onChange={(e) =>
                 setFormData({ ...formData, fullName: e.target.value })
@@ -133,11 +133,11 @@ function AuthModal() {
           </div>
         )}
         <div className="flex flex-col gap-1">
-          <label className="text-sm text-neutral-400">Email address</label>
+          <label className="text-[16px] text-neutral-400">Email address</label>
           <input
             type="email"
             placeholder="Email address"
-            className="h-12 w-full bg-white/15 px-3 outline-none rounded-lg"
+            className="h-12 w-full bg-white/15 px-3 outline-none text-lg rounded-lg"
             value={formData.email}
             onChange={(e) =>
               setFormData({ ...formData, email: e.target.value })
@@ -145,13 +145,13 @@ function AuthModal() {
           />
         </div>
         <div className="flex flex-col gap-1">
-          <label className="text-sm text-neutral-400">
+          <label className="text-[16px] text-neutral-400">
             {isLogin ? "Your password" : "Create a password"}
           </label>
           <input
             type="password"
             placeholder="Your password"
-            className="h-12 w-full bg-white/15 px-3 outline-none rounded-lg tracking-[0.27em] placeholder:tracking-normal"
+            className="h-12 w-full bg-white/15 px-3 outline-none rounded-lg tracking-[0.27em] placeholder:tracking-normal text-lg"
             value={formData.password}
             onChange={(e) =>
               setFormData({ ...formData, password: e.target.value })
@@ -163,12 +163,12 @@ function AuthModal() {
         {isLogin ? (
           <button
             type="submit"
-            className="w-full bg-[#22c55e] h-12 rounded-lg flex items-center justify-center"
+            className="w-full bg-[#22c55e] h-12 rounded-lg text-lg flex items-center justify-center"
             onClick={handleLogin}
             disabled={signingIn}
           >
             {signingIn ? (
-              <span className="text-white/80 animate-pulse">Signing in</span>
+              <span className="text-white/80">Signing in</span>
             ) : (
               "Sign in"
             )}
@@ -176,12 +176,12 @@ function AuthModal() {
         ) : (
           <button
             type="submit"
-            className="w-full bg-[#22c55e] h-12 rounded-lg flex items-center justify-center"
+            className="w-full bg-[#22c55e] h-12 text-lg font-medium rounded-lg flex items-center justify-center"
             onClick={handleSignup}
             disabled={signingUp}
           >
             {signingUp ? (
-              <span className="text-white/80 animate-pulse">Signing up</span>
+              <span className="text-white/80">Signing up</span>
             ) : (
               "Sign up"
             )}
@@ -190,7 +190,7 @@ function AuthModal() {
 
         <div>
           {isLogin ? (
-            <p className="text-sm font-light">
+            <p className="text-[16px] font-light">
               First time using Sonicstream?{" "}
               <span
                 onClick={() => setIsLogin(false)}
@@ -200,7 +200,7 @@ function AuthModal() {
               </span>
             </p>
           ) : (
-            <p className="text-sm font-light">
+            <p className="text-[16px] font-light">
               Already have an account?{" "}
               <span
                 onClick={() => setIsLogin(true)}

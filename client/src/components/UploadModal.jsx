@@ -78,14 +78,14 @@ function UploadModal() {
         className="flex flex-col gap-y-5"
       >
         {error && (
-          <span className="text-sm font-normal text-rose-500">{error}</span>
+          <span className="text-[16px] font-normal text-rose-500">{error}</span>
         )}
         <div>
           <input
             type="text"
             placeholder="Song title"
             id="title"
-            className="h-12 w-full bg-neutral-700 px-3 outline-none rounded-lg"
+            className="h-12 w-full bg-neutral-700 px-3 outline-none rounded-lg text-lg"
             value={title}
             onChange={(e) => setTitle(e.target.value)}
           />
@@ -95,7 +95,7 @@ function UploadModal() {
             type="text"
             placeholder="Song author"
             id="title"
-            className="h-12 w-full bg-neutral-700 px-3 outline-none rounded-lg"
+            className="h-12 w-full bg-neutral-700 px-3 outline-none rounded-lg text-lg"
             value={author}
             onChange={(e) => setAuthor(e.target.value)}
           />
@@ -105,15 +105,13 @@ function UploadModal() {
 
         <button
           type="submit"
-          className="h-12 bg-[#22c55e] text-black font-medium flex items-center justify-center rounded-lg"
+          className="h-12 bg-[#22c55e] text-lg font-semibold text-black flex items-center justify-center rounded-lg"
           disabled={creatingSong}
         >
           {creatingSong ? (
-            <span className="text-white/80 animate-pulse">
-              Creating new song
-            </span>
+            <span className="text-black/70">Submitting</span>
           ) : (
-            "Create new song"
+            "Submit"
           )}
         </button>
       </form>

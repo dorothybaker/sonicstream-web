@@ -53,7 +53,7 @@ export const signin = async (req, res) => {
 
 export const signout = async (req, res) => {
   try {
-    res.cookie("sonicstream", "", { maxAge: 0 });
+    res.clearCookie("sonicstream");
     res.status(200).json("Logged out successfully!");
   } catch (error) {
     res.status(500).json(error.message || "Internal Server Error!");
